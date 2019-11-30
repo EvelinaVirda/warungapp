@@ -21,7 +21,8 @@
 				</div>
 				</center>
 			</div>
-
+</div>
+<div class="tab-content">
 			<div class="tab tab-list-pesanan">
 				<center>
 				<table class="table table-dark">
@@ -40,6 +41,8 @@
 								<td><?php echo $r['nama']; ?></td>
 								<td><?php echo $r['meja']; ?></td>
 								<td><?php echo '<a href="list_pesanan.php?id_pesanan='.$r["id_pesanan"].'">Detail</a>'?></td>
+								<td><?php echo '<a href="pindah_meja.php?id_pesanan='.$r["id_pesanan"].'">Pindah meja</a>'?></td>
+								<td><?php echo '<a href="hapus_meja.php?id_pesanan='.$r["id_pesanan"].'">hapus</a>'?></td>
 							</tr>
 							</tbody>
 							<?php

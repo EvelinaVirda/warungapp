@@ -26,7 +26,8 @@
 				</div>
 				</center>
 			</div>
-
+</div>
+<div class="tab-content">
 			<div class="tab tab-list-pesanan">
 				<center>
 				<table class="table table-dark">
@@ -40,17 +41,19 @@
 						</tr>
 						</thead>
 					<?php 
-						while ($rslt = mysqli_fetch_assoc($sql)) {
-							?>
-							<tbody>
-							<tr>
-								<td><?php echo $rslt['nama']; ?></td>
-								<td><?php echo $rslt['meja']; ?></td>
-								<td><?php echo $rslt['menu']; ?></td>
-								<td><?php echo $rslt['qty']; ?></td>
-								<td><?php echo '<a href="edit_pesanan.php?id_pesanan='.$rslt["id_list_pesanan"].'">Edit</a>'?></td>
-							</tr>
-							</tbody>
+					while ($rslt = mysqli_fetch_assoc($sql)) {
+						?>
+						<tbody>
+						<tr>
+							<td><?php echo $rslt['nama']; ?></td>
+							<td><?php echo $rslt['meja']; ?></td>
+							<td><?php echo $rslt['menu']; ?></td>
+							<td><?php echo $rslt['qty']; ?></td>
+							<td><?php echo '<a href="edit_pesanan.php?id_pesanan='.$rslt["id_list_pesanan"].'">Edit </a>'?></td>
+							<!--<td><?php echo '<a href="tambah_pesanan.php?id_pesanan='.$rslt["id_pesanan"].'">Tambah pesanan</a>'?></td>-->
+							<td><?php echo '<a href="hapus_pesanan.php?id_pesanan='.$rslt["id_list_pesanan"].'">Hapus </a>'?></td>
+						</tr>
+						</tbody>
 							<?php
 						}
 					?>

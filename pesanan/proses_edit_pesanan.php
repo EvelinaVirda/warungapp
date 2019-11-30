@@ -5,7 +5,9 @@
 
 	$qty = $_POST['qty'];
 
-	$s = mysqli_query($connect, "UPDATE list_pesanan SET qty = '".$qty."' WHERE id_list_pesanan = '".$id_list_pesanan."'");
+	$menu = $_POST['menu'];
+
+	$s = mysqli_query($connect, "UPDATE list_pesanan SET qty = '".$qty."', menu = '".$menu."' WHERE id_list_pesanan = '".$id_list_pesanan."'");
 
 	$ss = mysqli_query($connect, 
 		"SELECT * FROM pesanan inner join list_pesanan 
@@ -14,5 +16,5 @@
 
 	$r = mysqli_fetch_array($result);
 
-	header("location:list_pesanan.php?id_pesanan=".$r['id_pesanan']."");
+	header("location:buat_pesanan.php");
 ?>

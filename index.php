@@ -1,18 +1,3 @@
-<?php
-
-$a = 5;
-$b = 10;
-$c = $b;
-
-$hasila = $a + 1;
-$hasilb = $b - 1;
-$hasilc = $c + $hasila;
-
-echo "$hasila , $hasilb , $hasilc";
-
-?>
-
-<!--
 <!DOCTYPE html>
 <html>
 <head>
@@ -35,4 +20,3 @@ echo "$hasila , $hasilb , $hasilc";
 	</div>
 </body>
 </html>
--->

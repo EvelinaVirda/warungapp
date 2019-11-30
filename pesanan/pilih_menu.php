@@ -29,7 +29,6 @@
 
 ?>
 	
-	<div class="tab-content">
 			<div class="tab tab-1">
 				<center>
 				<div class="form-group">
@@ -54,8 +53,7 @@
 				</div>
 				</center>
 			</div>
-		</div>
-
+			
 	
 <?php
 	include 'footer.php'
